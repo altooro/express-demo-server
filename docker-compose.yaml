@@ -1,0 +1,11 @@
+version: "3"
+services:
+  node:
+    build: .
+    ports:
+      - "8000:8000"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 1024M
