@@ -17,7 +17,7 @@ app.get('/user/:userId', (req, res) => {
     res.send(users_map[req.params["userId"]])
 })
 
-app.post('/user/:userId', (req, res) => {
+app.post('/users/:userId', (req, res) => {
     users_map[req.params["userId"]] = req.body
     res.send(req.body)
 })
